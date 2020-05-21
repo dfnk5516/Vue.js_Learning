@@ -1,0 +1,7 @@
+.text{
+  font-size : 70px;
+}
+
+.text.abc{
+  color : red;
+}

@@ -1,0 +1,16 @@
+.box{
+  width : 150px;
+  height : 150px;
+  background: royalblue;
+  border-radius : 10px;
+  cursor : pointer;
+  transition : 1s;
+  color : white;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+}
+.box.active{
+  width : 400px;
+  background : tomato;
+}

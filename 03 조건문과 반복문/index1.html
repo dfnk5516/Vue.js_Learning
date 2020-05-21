@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue  test</title>
+  <!-- <script src="../js/vue.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <ul>
+      <!-- v-for 쓸때 v-bind:key 필수로 쓰는걸 권장 -->
+      <li v-for="item in items" v-bind:key="item.id"> 
+        {{item.message}}
+      </li>
+    </ul>
+  </div>
+  <script>
+    const vm = new Vue({
+      el : '#app',
+      data : {
+        items : [
+          {
+            id : '1',
+            message : 'Hello World'
+          },
+          {
+            id : '2',
+            message : 'Good Job!'
+          },
+          {
+            id : '3',
+            message : 'My first Vue app'
+          }
+        ]
+      }
+    })
+  </script>
+</body>
+</html>
